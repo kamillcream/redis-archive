@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/redis
+    username: root
+    password: keypass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  data:
+    redis:
+      host: redis-18096.c1.us-central1-2.gce.redns.redis-cloud.com  # Redis ?? ?? (???: localhost)
+      port: 18096       # Redis ?? (???: 6379)
+      username: default
+      password: g6PQy8FqLZ683s4GWe19eRQkmKuRjmkk    # Redis? ????? ???? ??? ??
+      timeout: 6000ms
+
